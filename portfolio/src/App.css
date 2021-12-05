@@ -1,0 +1,64 @@
+
+.land-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#land-img{
+  height:100vh;
+  width:100%;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  font-size: xxx-large;
+}
+
+a{
+  padding: 0 5%;
+}
+
+a:link, a:visited{
+color: black;
+}
+
+a:hover{
+  color:darkcyan !important;
+}
+
+nav{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #dddddd;
+}
+
+#nav-contact{
+  background-color: transparent;
+  border: transparent;
+  font-size: xxx-large;
+  color:black;
+  padding: 0 5%;
+}
+
+#contact{
+  background-color: #088da5 !important;
+  font-size: xx-large !important;
+}
+
+.about-img{
+  display: flex;
+  justify-content: center;
+}
+
+#fullscreen{
+  background-color: transparent;
+}
