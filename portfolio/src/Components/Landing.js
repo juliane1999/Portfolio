@@ -1,6 +1,7 @@
 import React from 'react'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
+import './Button.scss'
 
   
 function MyVerticallyCenteredModal(props) {
@@ -34,8 +35,8 @@ export default function Landing() {
     return (
         <div className = 'land-container'>
       <>
-        <Button variant="primary" id="contact" onClick={() => setModalShow(true)}>
-        Contact Me Here For Web Development & Design!
+        <Button variant="primary" className="contact" onClick={() => setModalShow(true)}>
+        Contact Me Here For Web Development & Design !
         </Button>
   
         <MyVerticallyCenteredModal

@@ -32,7 +32,7 @@ function MyVerticallyCenteredModal(props) {
 export default function Nav() {
     const [modalShow, setModalShow] = React.useState(false);
     return (
-        // <div className='nav-container'>
+        <div className='nav-container'>
             <nav>
                 <div className='logo'>
                     <h1>JULIANE VO's PORTFOLIO</h1>
@@ -62,6 +62,6 @@ export default function Nav() {
                 </div>
 
             </nav>
-        // </div>
+         </div>
     )
 }

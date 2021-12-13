@@ -1,3 +1,10 @@
+/* $text: #382b22;
+$light-pink: #fff0f0;
+$pink: #ffe9e9;
+$dark-pink: #f9c4d2;
+$pink-border: #b18597;
+$pink-shadow: #ffe3e2; */
+
 *{
   box-sizing: border-box;
 }
@@ -44,8 +51,10 @@ a:hover{
 nav{
   display:flex;
   justify-content: space-evenly;
-  /* align-items: center; */
-  background-color: #dddddd;
+  background-image: url("https://images.unsplash.com/photo-1634244106844-107aa05a2df0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE4NnxpVUlzblZ0akIwWXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h3{
@@ -69,10 +78,11 @@ h3{
   justify-content: center;
 }
 
-#contact{
+/* #contact{
   background-color: #088da5 !important;
   font-size: xx-large !important;
-}
+
+} */
 
 .about-img{
   display: flex;
@@ -96,4 +106,22 @@ h3{
   height: calc(100vh - 110px);
  }
 
+ .card-img-top{
+   height:70%;
+ }
 
+ .card-title{
+   text-align: center;
+ }
+ 
+ .card-footer{
+   text-align:center;
+ }
+
+#about{
+  width:100%;
+}
+
+.about-container{
+  display: grid;
+}
