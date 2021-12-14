@@ -3,6 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "antd/dist/antd.css";
 import Carousel from 'react-bootstrap/Carousel'
 import { Modal, Button } from 'antd';
+import HRF from '../Assets/Search.png'
+import ecomm from '../Assets/Ecomm.png'
+import market from '../Assets/Market.png'
+import port from '../Assets/Port.png'
 
 export default function Projects() {
 
@@ -68,11 +72,9 @@ export default function Projects() {
         <Carousel.Item interval={3000}>
 
         <img
-        className="d-block w-100"
-        src="https://images.unsplash.com/photo-1637345540120-38bb0bbb7871?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDkxfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        className="d-block"
+        src={HRF}
         alt="First slide"
-        width='1920'
-        height='1080'
         />
 
         <Carousel.Caption>
@@ -91,13 +93,13 @@ export default function Projects() {
 
         <Carousel.Item interval={3000}>
             <img
-            className="d-block w-100"
-            src="https://images.unsplash.com/photo-1619796124432-c8b1670a190b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMzfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            className="d-block"
+            src={ecomm}
             alt="Third slide"
             />
             <Carousel.Caption>
             <h3>E-Comm</h3>
-    <>
+        <>
         <Button type="primary" onClick={showModal1}>
             More Info
         </Button>
@@ -106,37 +108,39 @@ export default function Projects() {
             <p>Some contents...</p>
             <p>Some contents...</p>
         </Modal>
-    </>
+        </>
             </Carousel.Caption>
             </Carousel.Item>
 
 
-            <Carousel.Item interval={3000}>
+        <Carousel.Item interval={3000}>
 
-            <img
-            className="d-block w-100"
-            src="https://images.unsplash.com/photo-1547534887-8d299f2c126b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDg2fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-            alt="Second slide"/>
+        <img
+        className="d-block"
+        src={market}
+        alt="Second slide"
+        />
 
-            <Carousel.Caption>
-            <h3>African Marketplace</h3>
-            <>
-            <Button type="primary" onClick={showModal2}>
-            More Info
-            </Button>
-            <Modal title="Frontend & UX/UI Contribution" visible={isModalVisible2} onOk={handleOk2} onCancel={handleCancel2}>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            </Modal>
-            </>
-            </Carousel.Caption>
-            </Carousel.Item>
+        <Carousel.Caption>
+        <h3>African Marketplace</h3>
+        <>
+        <Button type="primary" onClick={showModal2}>
+        More Info
+        </Button>
+        <Modal title="Frontend & UX/UI Contribution" visible={isModalVisible2} onOk={handleOk2} onCancel={handleCancel2}>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        </Modal>
+        </>
+        </Carousel.Caption>
+        </Carousel.Item>
+
 
         <Carousel.Item interval={3000}>
             <img
-            className="d-block w-100"
-            src="https://images.unsplash.com/photo-1631219892100-608317dd6c68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE4N3w2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            className="d-block"
+            src={port}
             alt="Fourth slide"/>
 
             <Carousel.Caption>

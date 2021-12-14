@@ -58,7 +58,7 @@ export default function Cards() {
     const renderCard = (card, index) => {
       return(
       <Card style={{ width: "15rem", height: "16rem"  }} key={index} className="box">
-      <Card.Img id = 'card-box' variant="top" src="holder.js/100px180" src={card.image} />
+      <Card.Img variant="top" src="holder.js/100px180" src={card.image} />
       <Card.Body style={{ height: "3rem"  }} >
         <Card.Title>{card.title}</Card.Title>
         {/* <Card.Text>{card.text}</Card.Text> */}
