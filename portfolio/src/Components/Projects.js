@@ -7,19 +7,59 @@ import { Modal, Button } from 'antd';
 export default function Projects() {
 
         const [isModalVisible, setIsModalVisible] = useState(false);
+        const [isModalVisible1, setIsModalVisible1] = useState(false);
+        const [isModalVisible2, setIsModalVisible2] = useState(false);
+        const [isModalVisible3, setIsModalVisible3] = useState(false);
       
         const showModal = () => {
           setIsModalVisible(true);
         };
+
+        const showModal1 = () => {
+        setIsModalVisible1(true);
+        };
+
+        const showModal2 = () => {
+        setIsModalVisible2(true);
+        };
+
+        const showModal3 = () => {
+        setIsModalVisible3(true);
+        };
       
         const handleOk = () => {
-          setIsModalVisible(false);
+        setIsModalVisible(false);
+        };
+
+        const handleOk1 = () => {
+        setIsModalVisible1(false);
+        };
+
+          const handleOk2 = () => {
+        setIsModalVisible2(false);
+        };
+
+          const handleOk3 = () => {
+        setIsModalVisible3(false);
         };
       
         const handleCancel = () => {
           setIsModalVisible(false);
         };
-    
+
+        const handleCancel1 = () => {
+        setIsModalVisible1(false);
+        };
+
+        const handleCancel2 = () => {
+        setIsModalVisible2(false);
+        };
+
+        const handleCancel3 = () => {
+        setIsModalVisible3(false);
+        };
+
+
   
     return (
         <div className = 'project-container'>
@@ -41,14 +81,13 @@ export default function Projects() {
         <Button type="primary" onClick={showModal}>
             More Info
         </Button>
-        <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
+        <Modal title="Frontend & UX/UI Contribution" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+            <p>Some ...</p>
         </Modal>
-    </>
+        </>
         </Carousel.Caption>
         </Carousel.Item>
+
 
         <Carousel.Item interval={3000}>
             <img
@@ -59,10 +98,10 @@ export default function Projects() {
             <Carousel.Caption>
             <h3>E-Comm</h3>
     <>
-        <Button type="primary" onClick={showModal}>
+        <Button type="primary" onClick={showModal1}>
             More Info
         </Button>
-        <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+        <Modal title="Frontend & UX/UI Contribution" visible={isModalVisible1} onOk={handleOk1} onCancel={handleCancel1}>
             <p>Some contents...</p>
             <p>Some contents...</p>
             <p>Some contents...</p>
@@ -70,6 +109,7 @@ export default function Projects() {
     </>
             </Carousel.Caption>
             </Carousel.Item>
+
 
             <Carousel.Item interval={3000}>
 
@@ -81,10 +121,10 @@ export default function Projects() {
             <Carousel.Caption>
             <h3>African Marketplace</h3>
             <>
-            <Button type="primary" onClick={showModal}>
+            <Button type="primary" onClick={showModal2}>
             More Info
             </Button>
-            <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+            <Modal title="Frontend & UX/UI Contribution" visible={isModalVisible2} onOk={handleOk2} onCancel={handleCancel2}>
             <p>Some contents...</p>
             <p>Some contents...</p>
             <p>Some contents...</p>
@@ -102,12 +142,10 @@ export default function Projects() {
             <Carousel.Caption>
             <h3>Portfolio</h3>
             <>
-            <Button type="primary" onClick={showModal}>
+            <Button type="primary" onClick={showModal3}>
                 More Info
             </Button>
-            <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
+            <Modal title="Frontend & UX/UI Contribution" visible={isModalVisible3} onOk={handleOk3} onCancel={handleCancel3}>
                 <p>Some contents...</p>
             </Modal>
             </>

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Card } from "react-bootstrap";
-import './Box.css'
 
 export default function Cards() {
   const cardInfo = [
