@@ -45,10 +45,6 @@ a:hover{
 nav{
   display:flex;
   justify-content: space-evenly;
-  background-image: url("https://images.unsplash.com/photo-1634244106844-107aa05a2df0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE4NnxpVUlzblZ0akIwWXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 h3{
@@ -109,6 +105,7 @@ h3{
 }
 
 .about-container{
+  display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(10, 1fr);
   border:2px solid red;
@@ -116,20 +113,17 @@ h3{
 
 .box{
   box-shadow: 0px 0px 15px -5px;
-  position: relative;
-  z-index: 1;
+  position: relative; 
+  z-index: 1; 
 }
 
-.box:nth-child(1){
-  border: 2px solid blue;
-  /* grid-area: 2/2/3/3; */
-  grid-column: 2/ span 3;
-  grid-row: 2/ span 3;
+.about-container .box:nth-child(1){
+  /* border:2px solid blue; */
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
-.box:nth-child(2){
-  grid-column: 2;
-  grid-row: 2;
+/* .box:nth-child(2){
 }
 
 .box:nth-child(3){
@@ -158,4 +152,10 @@ h3{
 
 .box:nth-child(9){
 
+} */
+
+.d-block{
+  width: 100%;
+  height:100%;
+  background-position: center;
 }

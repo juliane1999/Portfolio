@@ -3,6 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
+import Power from './Power'
+import clip from '../Assets/Clipboard.png'
 
 function MyVerticallyCenteredModal(props) {
     return (
@@ -21,6 +23,7 @@ function MyVerticallyCenteredModal(props) {
           <h5>Email me @ julianevo1999@gmail.com</h5>
           <h5>Link up @ https://www.linkedin.com/in/juliane-nguyen-8858a5206/</h5>
           <h5>Phone: 669-237-9950</h5>
+          <img src={clip} class= 'clipboard' alt='clipboard'/>
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={props.onHide}>Close</Button>
@@ -31,13 +34,21 @@ function MyVerticallyCenteredModal(props) {
 
 export default function Nav() {
     const [modalShow, setModalShow] = React.useState(false);
+
+
+
     return (
+      
+
         <div className='nav-container'>
             <nav>
                 <div className='logo'>
                     <h1>JULIANE VO's PORTFOLIO</h1>
                 </div>
-
+            
+                <Power/>
+                
+                
                 <div className = 'links'>
                 <a>
                 <Link to = '/' style={{textDecoration: 'none'}}>Home</Link>
@@ -48,6 +59,7 @@ export default function Nav() {
                 <a>
                 <Link to = '/about'style={{textDecoration: 'none'}}>About</Link>
                 </a>
+                
 
                 <>
                     <Button variant="primary" id="nav-contact" onClick={() => setModalShow(true)}>
@@ -58,10 +70,15 @@ export default function Nav() {
                     show={modalShow}
                     onHide={() => setModalShow(false)}
                     />
+                    
                 </>
                 </div>
-
+                
+                
             </nav>
          </div>
+         
     )
 }
+
+
