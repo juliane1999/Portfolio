@@ -5,6 +5,8 @@ import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 import Power from './Power'
 import clip from '../Assets/Clipboard.png'
+import DarkMode from '../Themes/DarkMode'
+
 
 function MyVerticallyCenteredModal(props) {
     return (
@@ -45,8 +47,6 @@ export default function Nav() {
                 <div className='logo'>
                     <h1>JULIANE VO's PORTFOLIO</h1>
                 </div>
-            
-                <Power/>
                 
                 
                 <div className = 'links'>

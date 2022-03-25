@@ -1,15 +1,10 @@
-import React,{useState} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { PowerBtn } from '../SVG/PowerBtn'
-import { ThemeProvider } from 'styled-components'
-import { lightTheme, darkTheme } from '../Themes/Theme'
-import GlobalStyles from '../Themes/GlobalStyles'
 
 const Power = () => {
 
-  const [theme, setTheme] = useState(true);
-  const toggleTheme = () => { theme === 'light' ? setTheme('dark') : setTheme('light') }
-  // const currentTheme = theme === 'light' ? lightTheme : darkTheme
+
 
     const Pow = styled.button`
     position: fixed;
@@ -30,12 +25,9 @@ const Power = () => {
 }`
 
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <GlobalStyles/>
     <Pow>
-    <PowerBtn onclick={toggleTheme} width={30} height={30} fill='currentColor' />
+    <PowerBtn id='power' width={30} height={30} fill='currentColor' />
     </Pow>
-    </ThemeProvider>
   )
 }
 
