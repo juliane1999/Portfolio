@@ -2,8 +2,6 @@ import React from 'react'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 import '../Themes/Button.scss'
-// import './Button.scss'
-
   
 function MyVerticallyCenteredModal(props) {
     return (

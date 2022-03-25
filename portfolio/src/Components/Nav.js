@@ -1,11 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, {useContext} from 'react'
 import { Link } from 'react-router-dom'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
-import Power from './Power'
 import clip from '../Assets/Clipboard.png'
-import DarkMode from '../Themes/DarkMode'
 
 
 function MyVerticallyCenteredModal(props) {
@@ -35,20 +33,18 @@ function MyVerticallyCenteredModal(props) {
   }
 
 export default function Nav() {
+
     const [modalShow, setModalShow] = React.useState(false);
-
-
-
     return (
       
-
         <div className='nav-container'>
+          
             <nav>
                 <div className='logo'>
                     <h1>JULIANE VO's PORTFOLIO</h1>
                 </div>
                 
-                
+                 
                 <div className = 'links'>
                 <a>
                 <Link to = '/' style={{textDecoration: 'none'}}>Home</Link>
@@ -77,6 +73,7 @@ export default function Nav() {
                 
             </nav>
          </div>
+   
          
     )
 }
