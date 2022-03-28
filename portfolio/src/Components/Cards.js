@@ -7,7 +7,7 @@ export default function Cards() {
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
         title: "HTML5",
-        text: "",
+        text: "HTML",
       },
     {
       image:
@@ -33,7 +33,7 @@ export default function Cards() {
     },
     {
       image:
-        "https://cdn.freelogovectors.net/wp-content/uploads/2021/07/whimsical-logo-freelogovectors.net_-400x400.png",
+        "https://cdn.freelogovectors.net/wp-content/uploads/2021/07/whimsical-logo-freelogovectors.net_.png",
       title: "Whimsical",
       text: "Whimsical is a software that helps build user flows and wireframes for an application.",
     },
@@ -57,20 +57,31 @@ export default function Cards() {
 
     const renderCard = (card, index) => {
       return(
+        <>
+      <div className='card card-front'>
       <Card style={{ width: "15rem", height: "16rem"  }} key={index} className="box">
-      <Card.Img variant="top" src="holder.js/100px180" src={card.image} />
+      <Card.Img variant="top" src={card.image} />
       <Card.Body style={{ height: "3rem"  }} >
+        
         <Card.Title>{card.title}</Card.Title>
-        {/* <Card.Text>{card.text}</Card.Text> */}
+        
       </Card.Body>
       <Card.Footer>
-        More Info
+        <button>More Info</button>
       </Card.Footer>
-    </Card>
+      </Card>
+    </div>
+
+    <div className='card card-back'>
+      <Card.Text id='card-body'>{card.text}</Card.Text>
+    </div>
+    </>
       );
     };  
 
-    return <div className="grid">{cardInfo.map(renderCard)}</div>;
+    return <div className='card-front'>{cardInfo.map(renderCard)}</div>
+
+
 };
 
 

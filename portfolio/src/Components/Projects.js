@@ -12,7 +12,7 @@ const Project = () => {
   const theme = useContext(ThemeContext)
   return (
     <div style={theme}>
-      <p>{JSON.stringify(theme)}</p>
+      
     </div>
   )
 }

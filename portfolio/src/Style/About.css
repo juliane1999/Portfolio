@@ -1,0 +1,77 @@
+/* tree photo from figma */
+#about{
+    width:100%;
+    position: absolute;
+  }
+  
+  /* the cards in about page */
+  .about-container{
+    border:2px solid red;
+  }
+  
+  .box{
+    box-shadow: 0px 0px 15px -5px;
+    position: relative; 
+    z-index: 1; 
+  }
+  
+  .about-container:hover .card-front{
+    transform: rotateY(180deg)
+  }
+  
+  .about-container:hover .card-back{
+    transform: rotateY(0deg)
+  }
+  
+  .card-back{
+    transform: rotateY(180deg);
+    border:2px solid purple;
+  }
+  
+  .card{
+      transition: all 0.9s;
+      backface-visibility: hidden;
+  }
+  
+  #card-body{                
+      transform: scale(-1, 1);
+  }
+  
+  .about-container .box:nth-child(1){
+    border:2px solid blue;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  
+  .box:nth-child(2){
+    border:2px solid green;
+  }
+  
+  /* .box:nth-child(3){
+  
+  }
+  
+  .box:nth-child(4){
+  
+  }
+  
+  .box:nth-child(5){
+  
+  }
+  
+  .box:nth-child(6){
+  
+  }
+  
+  .box:nth-child(7){
+  
+  }
+  
+  .box:nth-child(8){
+  
+  }
+  
+  .box:nth-child(9){
+  
+  } */
+  

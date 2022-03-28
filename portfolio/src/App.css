@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oregano&family=VT323&display=swap');
 
 *{
   box-sizing: border-box;
+  font-family: 'VT323', monospace !important;
 }
 
 body {
   overflow-x: hidden;
 }
 
+/* landing page styling */
 .land-container{
   display: flex;
   justify-content: center;
@@ -24,9 +27,16 @@ body {
   width:100%;
 }
 
+/* juliane vo's portfolio */
+.logo{
+  margin-top: 1%;
+}
+
+/* nav bar styling */
 .links{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   font-size: xxx-large;
 }
 
@@ -47,33 +57,25 @@ nav{
   justify-content: space-evenly;
 }
 
-h3{
-  color:white !important;
-}
-
 #nav-contact{
   background-color: transparent;
   border: transparent;
   font-size: xxx-large;
   color:black;
   padding: 0 5%;
-}
-
-.logo{
-  margin-top: 1%;
-}
-
-.links{
+  height: 88%;
   display: flex;
   justify-content: center;
-}
-
-.d-block{
-  height:100vh;
+  align-items: center;
   
 }
 
-.ant-modal{
+#nav-contact:hover{
+  color: darkcyan;
+}
+
+/* modal for carousel */
+/* .ant-modal{
   float:left;
 }
 
@@ -84,79 +86,23 @@ h3{
 
  .ant-modal-body {
   height: calc(100vh - 110px);
- }
+ } */
 
- .card-img-top{
-   height:60%;
-   object-fit: contain;
- }
-
- .card-title{
-   text-align: center;
- }
- 
- .card-footer{
-   text-align:center;
- }
-
-#about{
-  width:100%;
-  position: absolute;
+ /* about cards */
+.card-img-top{
+  height:60%;
+  object-fit: contain;
 }
 
-.about-container{
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  border:2px solid red;
+.card-title{
+  text-align: center;
 }
 
-.box{
-  box-shadow: 0px 0px 15px -5px;
-  position: relative; 
-  z-index: 1; 
+.card-footer{
+  text-align:center;
 }
 
-.about-container .box:nth-child(1){
-  /* border:2px solid blue; */
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-
-/* .box:nth-child(2){
-}
-
-.box:nth-child(3){
-
-}
-
-.box:nth-child(4){
-
-}
-
-.box:nth-child(5){
-
-}
-
-.box:nth-child(6){
-
-}
-
-.box:nth-child(7){
-
-}
-
-.box:nth-child(8){
-
-}
-
-.box:nth-child(9){
-
-} */
-
+/* ??? */
 .d-block{
-  width: 100%;
-  height:100%;
-  background-position: center;
+  height:100vh;
 }
-
