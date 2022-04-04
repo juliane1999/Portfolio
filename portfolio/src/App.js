@@ -8,7 +8,8 @@ import Landing from './Components/Landing'
 import Projects from './Components/Projects';
 import About from './Components/About';
 import Power from './Components/Power';
-import Footer from './Components/Footer'
+import Credit from './Components/Credit'
+
 
 function Application() {
 
@@ -21,13 +22,13 @@ function Application() {
       <div onClick={toggleTheme}>
       <Power />
       </div>
-      <Nav/>
+      <Nav />
       <Routes>
         <Route path ='/' element = {<Landing/>}/>
         <Route path ='/projects' element = {<Projects/>}/>
         <Route path = '/about' element = {<About/>}/>
       </Routes>
-      <Footer />
+      <Credit />
     </ThemeContext.Provider>
   
   );

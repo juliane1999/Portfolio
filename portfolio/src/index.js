@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
 import GlobalStyles from './Themes/GlobalStyles'
 
+
 ReactDOM.render(
   <Router>
     <GlobalStyles/>

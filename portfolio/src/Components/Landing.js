@@ -33,6 +33,7 @@ export default function Landing() {
   
     return (
         <div className = 'land-container'>
+          
       <>
         <Button variant="primary" className="contact" onClick={() => setModalShow(true)}>
         Contact Me Here For Web Development & Design !

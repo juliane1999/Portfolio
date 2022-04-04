@@ -1,0 +1,18 @@
+.modal-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+#line1{
+    display: flex;
+    width:80%;
+}
+
+#line2{
+    display: flex;
+    width: 80%;
+}
+
+#line3{
+    display: flex;
+    width:25%;
+}
