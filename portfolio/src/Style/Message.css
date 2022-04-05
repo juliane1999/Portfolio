@@ -1,16 +1,9 @@
-.main-container {
+.c {
     position: relative;
   }
   
-  .sec-main {
-    width: 20px;
-    height: 100%;
-    background-color: #59b256;
-    position: absolute;
-  }
-  
-  .wrapper {
-    padding: 50px;
+  .c-wrapper {
+    padding: 1rem;
     display: flex;
   }
   
@@ -26,12 +19,12 @@
     justify-content: center;
   }
   
-  .title {
+  .c-title {
     font-size: 60px;
     width: 80%;
   }
   
-  .info-item {
+  .c-info-item {
     display: flex;
     align-items: center;
     margin: 50px 0px;
@@ -71,10 +64,10 @@
   }
   
   button {
-    border: none;
-    padding: 15px;
-    background-color: #59b256;
-    color: white;
+    border: 2px solid aquamarine;
+    padding: 5px;
+    background-color: transparent;
+    color: grey;
     font-weight: 500;
     cursor: pointer;
   }

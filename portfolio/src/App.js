@@ -4,11 +4,12 @@ import { Route, Routes } from
 "react-router-dom";
 import ThemeContext, {themes} from './Themes/ThemeContext'
 import Nav from './Components/Nav';
+import Power from './Components/Power';
 import Landing from './Components/Landing'
 import Projects from './Components/Projects';
 import About from './Components/About';
-import Power from './Components/Power';
-import Credit from './Components/Credit'
+import Message from './Components/Message';
+import Credit from './Components/Credit';
 
 
 function Application() {
@@ -28,6 +29,7 @@ function Application() {
         <Route path ='/projects' element = {<Projects/>}/>
         <Route path = '/about' element = {<About/>}/>
       </Routes>
+      <Message />
       <Credit />
     </ThemeContext.Provider>
   
