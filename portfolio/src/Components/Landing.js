@@ -43,33 +43,38 @@ const MyVerticallyCenteredModal = (props) => {
 
 
           <div id='line1'>  
-          <h5>Email me @ julianevo1999@gmail.com</h5>
-          <button onClick={handleEmail}>
-          {isCopied ? <ContentPasteOutlinedIcon /> : <CopyAllIcon /> }
-          </button>
+            <h5>Email me @ julianevo1999@gmail.com</h5>
+            <button onClick={handleEmail}>
+            {isCopied ? <ContentPasteOutlinedIcon /> : <CopyAllIcon /> }
+            </button>
           </div>
  
 
-
           <div id='line2'>
-          <h5>Link up @ https://www.linkedin.com/in/juliane-nguyen-8858a5206/</h5>
-          <button onClick={handleLink}>
-          {isCopied2 ? <ContentPasteOutlinedIcon /> : <CopyAllIcon /> }
-          </button>
+            <h5>Link up @ https://www.linkedin.com/in/juliane-nguyen-8858a5206/</h5>
+            <button onClick={handleLink}>
+            {isCopied2 ? <ContentPasteOutlinedIcon /> : <CopyAllIcon /> }
+            </button>
           </div>
    
-          
      
           <div id='line3'>
-          <h5>Phone: 669-237-9950</h5> 
-          <button onClick={handlePhone}>
-          {isCopied3 ? <ContentPasteOutlinedIcon /> : <CopyAllIcon /> }
-          </button>
+            <h5>Phone: 669-237-9950</h5> 
+            <button onClick={handlePhone}>
+            {isCopied3 ? <ContentPasteOutlinedIcon /> : <CopyAllIcon /> }
+            </button>
           </div>
-     
+          
 
         </Modal.Body>
         <Modal.Footer>
+            <div id='line4'>
+              <button id='resume-btn'>
+                <a id='dl' href='Resume.pdf' download='Resume.pdf'>
+                 RESUME
+                </a>
+              </button>
+            </div>
           <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>

@@ -4,16 +4,26 @@
 }
 #line1{
     display: flex;
-    width:80%;
+    align-items: baseline;
 }
 
 #line2{
     display: flex;
+    align-items: baseline;
     width: 80%;
 }
 
 #line3{
     display: flex;
-    width:25%;
+    align-items: baseline;
 }
 
+#line4{
+    margin-right: 18.5rem;
+    width: 10%;
+}
+
+/* #dl{
+    display: flex;
+    flex-flow: row wrap;
+} */
