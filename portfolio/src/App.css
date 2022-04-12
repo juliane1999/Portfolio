@@ -10,11 +10,11 @@ body {
 }
 
 /* landing page styling */
-.land-container{
+.landing-wrap{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,77 +32,3 @@ body {
   margin-top: 1%;
 }
 
-/* nav bar styling */
-.links{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: xxx-large;
-}
-
-a{
-  padding: 0 5%;
-}
-
-a:link, a:visited{
-color: black;
-}
-
-a:hover{
-  color:darkcyan !important;
-}
-
-nav{
-  display:flex;
-  justify-content: space-evenly;
-}
-
-#nav-contact{
-  background-color: transparent;
-  border: transparent;
-  font-size: xxx-large;
-  color:black;
-  padding: 0 18%;
-  height: 88%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-#nav-contact:hover{
-  color: darkcyan;
-}
-
-/* modal for carousel */
-/* .ant-modal{
-  float:left;
-}
-
-.ant-modal, .ant-modal-content {
-  height: 100vh;
-  width: 99vw;
- }
-
- .ant-modal-body {
-  height: calc(100vh - 110px);
- } */
-
- /* about cards */
-.card-img-top{
-  height:60%;
-  object-fit: contain;
-}
-
-.card-title{
-  text-align: center;
-}
-
-.card-footer{
-  text-align:center;
-}
-
-/* ??? */
-.d-block{
-  height:100vh;
-}

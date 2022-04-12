@@ -2,11 +2,11 @@ import { createContext } from 'react'
 
 export const themes = {
     dark: {
-        color: 'aqua',
-        background: 'black'
+        color: 'grey',
+        background: '#121212'
     },
     light: {
-        color: 'black',
+        color: '#121212',
         background: 'white'
     }
 }

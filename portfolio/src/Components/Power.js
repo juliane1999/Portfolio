@@ -6,7 +6,7 @@ const Power = () => {
 
 return (
   <Pow>
-    <img src = {btn} width={30} height={30} alt = 'button' />
+    <img src = {btn} width={35} height={35} alt = 'button' />
   </Pow>
   )
 }

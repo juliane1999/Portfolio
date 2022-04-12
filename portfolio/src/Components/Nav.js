@@ -1,13 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, { useContext } from 'react'
+import ThemeContext from '../Themes/ThemeContext'
 import { Link } from 'react-router-dom'
 import Contact from './Contact'
+import SoundBar from './Soundbar'
+import '../Style/Nav.css'
 
 export default function Nav() {
 
+    const theme = useContext(ThemeContext)
+
     return (
       
-        <div className='nav-container'>
+        <div className='nav-container' style={theme}>
           
             <nav>
                 <div className='logo'>
@@ -27,6 +32,8 @@ export default function Nav() {
                 </a>
 
                 <Contact />
+
+                <SoundBar />
                 
                 </div>  
             </nav>

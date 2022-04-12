@@ -5,7 +5,7 @@ position: fixed;
 top: 1.5rem;
 left:8%;
 transform: translate(-50%, 0);
-border-radius: 50%;
+border-radius: 47%;
 background-color: transparent;
 display: flex;
 justify-content: center;

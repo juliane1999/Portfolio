@@ -11,11 +11,10 @@ export default function About() {
 
   return(
     <>
-      <img src={tree} id = 'about' alt='tree'></img>
-      
-      <div className= 'about-container' style={theme}>
-        <Cards/>
-      </div>
+    <div className='wrap'>
+      <img src={tree} id = 'about' alt='tree' style={theme}></img>
+      <Cards/>
+    </div>
     </>
   ) 
 };
