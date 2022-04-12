@@ -95,7 +95,7 @@ const MyVerticallyCenteredModal = (props) => {
           <span></span>
             <div className='hero-box'>
             <h1>Hi, I'm Juliane, a UX/UI designer and front-end web developer!</h1>
-        </div>
+            </div>
         <>
             <Button variant="primary" className="contact" onClick={() => setModalShow(true)}>
             Contact Me Here For Web Development & Design !
@@ -105,8 +105,8 @@ const MyVerticallyCenteredModal = (props) => {
             show={modalShow}
             onHide={() => setModalShow(false)}/>
         </>
-        </div>
-        )
+      </div>
+      )
     }
 
     export default Hero

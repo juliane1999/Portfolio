@@ -12,7 +12,7 @@ const Project = () => {
   const theme = useContext(ThemeContext)
   return (
     <div style={theme}>
-      
+      <h1>Project</h1>
     </div>
   )
 }
