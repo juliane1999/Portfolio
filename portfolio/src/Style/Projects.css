@@ -1,0 +1,67 @@
+.projects{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 0 5%;
+}
+
+.hrf{
+    border: 3px solid darkcyan;
+    height: 50vh;
+    width: 25%;
+    margin: 2rem 5rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.market{
+    border: 3px solid darkcyan;
+    height: 50vh;
+    width: 25%;
+    margin: 2rem 5rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ecomm{
+    border: 3px solid darkcyan;
+    height: 50vh;
+    width: 25%;
+    margin: 2rem 5rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.portfolio{
+    border: 3px solid darkcyan;
+    height: 50vh;
+    width: 25%;
+    margin: 2rem 5rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+p{
+    text-align: center;
+    padding: 25% 0;
+    font-size: xxx-large;
+}
+
+h4{
+    border: 2px solid red;
+    
+}
+
+.hashtags{
+    margin-bottom: 15%;
+}

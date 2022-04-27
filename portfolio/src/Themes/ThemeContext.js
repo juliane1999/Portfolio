@@ -2,12 +2,12 @@ import { createContext } from 'react'
 
 export const themes = {
     dark: {
-        color: 'grey',
+        color: '#FFF',
         background: '#121212'
     },
     light: {
         color: '#121212',
-        background: 'white'
+        background: '#FFF'
     }
 }
 

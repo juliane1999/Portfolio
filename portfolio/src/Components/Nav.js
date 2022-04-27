@@ -12,13 +12,12 @@ export default function Nav() {
 
     return (
       
-        <div className='nav-container' style={theme}>
+        <div className='nav-container'>
           
             <nav>
-                <div className='logo'>
+                <div className='logo' >
                     <h1>JULIANE VO's PORTFOLIO</h1>
                 </div>
-                
                  
                 <div className = 'links'>
                 <a>
