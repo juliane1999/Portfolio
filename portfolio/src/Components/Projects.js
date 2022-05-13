@@ -16,21 +16,21 @@ const Project = () => {
     <div className='projects' style={theme}>
 
       <div className='hrf'>
-        <a style={theme} target='_blank' href = 'https://github.com/juliane1999/human-rights-first-docdb-fe'>
-          <p className='title'>Human Rights First</p>
+        <a target='_blank' href = 'https://github.com/juliane1999/human-rights-first-docdb-fe'>
+          <p style={theme} className='title'>Human Rights First</p>
             <img className='bg-images' src={HRF} alt='hrf'/>
               <div className='hashtags'>
-                <p>#React #JavaScript #Redux</p>
+                <p style={theme}>#React #JavaScript #Redux</p>
               </div>
         </a>
       </div>
 
       <div className='market'>
-        <a style={theme} target='_blank' href = 'https://african-marketplace-project.vercel.app/'>
-          <p className='title'>African Marketplace</p>
+        <a target='_blank' href = 'https://african-marketplace-project.vercel.app/'>
+          <p style={theme} className='title'>African Marketplace</p>
             <img className='bg-images' src={market} alt='market'/>
               <div className='hashtags'>
-                <p>#React #JavaScript #Redux</p>
+                <p style={theme}>#React #JavaScript #Redux</p>
               </div>
         </a>
       </div>
