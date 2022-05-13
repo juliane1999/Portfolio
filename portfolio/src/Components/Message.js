@@ -60,10 +60,10 @@ const Message = () => {
 
               <div className='icons'>
                 <a target='_blank' href = 'https://www.linkedin.com/in/juliane-nguyen-8858a5206/'>
-                  <LinkedInIcon style={theme} />
+                  <LinkedInIcon id='linkedin'/>
                 </a>                  
                 <a target='_blank' href = 'https://github.com/juliane1999' >
-                  <GitHubIcon style={theme}/>
+                  <GitHubIcon id='github'/>
                 </a>
               </div>
 
@@ -76,7 +76,7 @@ const Message = () => {
                 <input type="text" placeholder="Subject" name="user_subject" />
                 <input type="text" placeholder="Email" name="user_email" />
                 <textarea rows="6" placeholder="Message" name="message" />
-                <button className='message-btn'><span className='message-span'>Submit</span></button>
+                <button id='message-btn'><span className='message-span'>Submit</span></button>
                 {done && 'Sent!'}
               </form>
             </div>

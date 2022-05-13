@@ -14,6 +14,8 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .market{
@@ -25,6 +27,7 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .ecomm{
@@ -36,6 +39,7 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     
 }
 
@@ -48,20 +52,62 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     
 }
 
-p{
+.title{
     text-align: center;
     padding: 25% 0;
     font-size: xxx-large;
 }
 
-h4{
-    border: 2px solid red;
-    
+p{
+    font-size: large;
 }
 
-.hashtags{
-    margin-bottom: 15%;
+.bg-images{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.hrf:hover .bg-images{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: fill;
+}
+
+.market:hover .bg-images{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.ecomm:hover .bg-images{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio:hover .bg-images{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
