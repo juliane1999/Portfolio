@@ -1,13 +1,17 @@
 import React, { useRef, useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 import music from '../Assets/Song.mp3'
+import symbol from '../Assets/Music.png'
 
 const Box = styled.div`
+animation-name: float;
+transform: translatey(0px);
+animation: float 8s ease-in-out infinite;
 display:flex;
 cursor:pointer;
 position:fixed;
-right:3.5rem;
-top:2rem;
+right: 2rem;
+top: 1rem;
 z-index:10;
 &>*:nth-child(1){
     animation-delay: 0.2s;
@@ -23,6 +27,21 @@ z-index:10;
 }
 &>*:nth-child(5){
     animation-delay: 0.8s;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	75% {
+		transform: translatey(5px);
+	}
+    100% {
+		transform: translatey(0px);
+	}
 }
 `
 
@@ -63,14 +82,15 @@ const SoundBar = () => {
     }
     return (
         <Box onClick={() => handleClick()}>
+            {/* <Line click={click}/>
             <Line click={click}/>
             <Line click={click}/>
             <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
-
+            <Line click={click}/> */}
+            <img src={symbol} click={click} width={50} height={50} alt='music symbol'></img>
 
             <audio src={music} ref={ref}  loop />
+
         </Box>
     )
 }
