@@ -7,6 +7,7 @@ import HRF from '../Assets/Search.png'
 import ecomm from '../Assets/Ecomm.png'
 import market from '../Assets/Market.png'
 import port from '../Assets/Port.png'
+import pipe from '../Assets/Pipe.png'
 import '../Style/Projects.css'
 
 
@@ -49,6 +50,10 @@ const Project = () => {
             <div className='hashtags'>
               <p style={theme}>#React #JavaScript #Redux</p>
             </div>
+      </div>
+
+      <div className='blue-pipe'>
+        <img src={pipe} width={500} height={800} alt='blue pipe'></img>
       </div>
 
     </div>

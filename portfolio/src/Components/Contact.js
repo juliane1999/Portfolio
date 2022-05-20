@@ -71,13 +71,13 @@ const MyVerticallyCenteredModal = (props) => {
         </Modal.Body>
         <Modal.Footer>
           <div id='line4'>
-              <button id='resume-btn'>
+              <button>
                 <a id='dl' href='Resume.pdf' download='Resume.pdf'>
                  RESUME
                 </a>
               </button>
             </div>
-          <Button onClick={props.onHide}>Close</Button>
+          
         </Modal.Footer>
       </Modal>
       </>
