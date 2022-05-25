@@ -1,4 +1,4 @@
-import React, { useref } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import pipe from '../Assets/Pipe.png'
 import arrow from '../Assets/Arrow.gif'
@@ -16,18 +16,22 @@ const Pipe = () => {
 
     let audio = new Audio('/Super.mp3')
 
-    const start = (pause) => {
+    const start = () => {
         audio.play();
-        window.scrollBy(0,1000);
 
-        window.scrollBy(0,2000);
+        setTimeout(() => {
+            window.scrollBy(0,1000);
+        }, 800);
+
+        window.scrollBy(0,1000)
+        window.scrollBy(0,1000)
       }
 
 
   return (
     <Contain onClick={start}>
-        <img src={arrow} height={400} alt='arrow'/>
-        <img src={pipe}  width={500} height={800} alt='blue pipe' />
+        <img src={arrow} height={400} alt='arrow' />
+        <img src={pipe}  width={400} height={500} alt='blue pipe' />
     </Contain>
   )
 }
