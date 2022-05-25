@@ -3,7 +3,7 @@
 }
 
 .contact {
-  margin-top:-10%;
+  margin-top: -10%;
 }
 
 .hero-container{ 
@@ -49,8 +49,8 @@
   height: 50vh;
   padding-bottom: 8%;
   background-color: white;
-  border:1px solid #f0a591;
-  opacity:0.6;
+  border: 2px solid #f0a591;
+  opacity: 0.6;
 }
 
 .hero-container span {
@@ -61,7 +61,6 @@
   height: 100%;
   display: block;
 }
-
 
 .hero-container span:nth-child(1) {
   transform:rotate(0deg);

@@ -8,6 +8,8 @@ import ecomm from '../Assets/Ecomm.png'
 import market from '../Assets/Market.png'
 import port from '../Assets/Port.png'
 import pipe from '../Assets/Pipe.png'
+import arrow from '../Assets/Arrow.gif'
+import Pipe from '../Components/Pipe'
 import '../Style/Projects.css'
 
 
@@ -15,6 +17,10 @@ const Project = () => {
   const theme = useContext(ThemeContext)
   return (
     <div className='projects' style={theme}>
+
+      <div className='main-title'>
+        <h1 id='front-end' style={theme}>Front-end</h1>
+      </div>
 
       <div className='hrf'>
         <a target='_blank' href = 'https://github.com/juliane1999/human-rights-first-docdb-fe'>
@@ -52,11 +58,53 @@ const Project = () => {
             </div>
       </div>
 
-      <div className='blue-pipe'>
-        <img src={pipe} width={500} height={800} alt='blue pipe'></img>
+      <Pipe />
+
+      <span id='empty'></span>
+
+      <div className='main-title'>
+        <h1 id='design' style={theme}>UX/UI</h1>
+      </div>
+
+      <div className='figma'>
+        <a target='_blank' href = 'https://github.com/juliane1999/human-rights-first-docdb-fe'>
+          <p style={theme} className='title'>Human Rights First</p>
+            <img className='bg-images' src={HRF} alt='hrf'/>
+              <div className='hashtags'>
+                <p style={theme}>#React #JavaScript #Redux</p>
+              </div>
+        </a>
+      </div>
+
+      <div className='figma'>
+        <a target='_blank' href = 'https://african-marketplace-project.vercel.app/'>
+          <p style={theme} className='title'>African Marketplace</p>
+            <img className='bg-images' src={market} alt='market'/>
+              <div className='hashtags'>
+                <p style={theme}>#React #JavaScript #Redux</p>
+              </div>
+        </a>
+      </div>
+
+      <div className='figma'>
+        <p className='title'>Ecomm</p>
+          <img className='bg-images' src={ecomm} alt='ecomm'/>
+            <div className='hashtags'>
+              <p style={theme}>#React #JavaScript #Redux</p>
+            </div>
+      </div>
+
+      <div className='figma'>
+        <p className='title'>Portfolio</p>
+          <img className='bg-images' src={port} alt='portfolio'/>
+            <div className='hashtags'>
+              <p style={theme}>#React #JavaScript #Redux</p>
+            </div>
       </div>
 
     </div>
+
+    
   )
 }
 

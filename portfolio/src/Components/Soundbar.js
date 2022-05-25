@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import music from '../Assets/Song.mp3'
 import symbol from '../Assets/Music.png'
 
@@ -13,21 +13,6 @@ position:fixed;
 right: 2rem;
 top: 1rem;
 z-index:10;
-&>*:nth-child(1){
-    animation-delay: 0.2s;
-}
-&>*:nth-child(2){
-    animation-delay: 0.3s;
-}
-&>*:nth-child(3){
-    animation-delay: 0.4s;
-}
-&>*:nth-child(4){
-    animation-delay: 0.5s;
-}
-&>*:nth-child(5){
-    animation-delay: 0.8s;
-}
 
 @keyframes float {
 	0% {
@@ -45,26 +30,26 @@ z-index:10;
 }
 `
 
-const play = keyframes`
-0%{
-    transform:scaleY(1);
-}
-50%{
-    transform:scaleY(2);
-}
-100%{
-    transform:scaleY(1);
-}
-`
-const Line = styled.span`
-background: ${props => props.theme.text};
-border: 1px solid ${props => props.theme.body};
-animation:${play} 1s ease infinite;
-animation-play-state: ${props => props.click ? "running" : "paused"};
-height: 1rem;
-width: 2px;
-margin:0 0.1rem
-`
+// const play = keyframes`
+// 0%{
+//     transform:scaleY(1);
+// }
+// 50%{
+//     transform:scaleY(2);
+// }
+// 100%{
+//     transform:scaleY(1);
+// }
+// `
+// const Line = styled.span`
+// background: ${props => props.theme.text};
+// border: 1px solid ${props => props.theme.body};
+// animation:${play} 1s ease infinite;
+// animation-play-state: ${props => props.click ? "running" : "paused"};
+// height: 1rem;
+// width: 2px;
+// margin:0 0.1rem
+// `
 
 const SoundBar = () => {
 
@@ -82,13 +67,8 @@ const SoundBar = () => {
     }
     return (
         <Box onClick={() => handleClick()}>
-            {/* <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/> */}
-            <img src={symbol} click={click} width={50} height={50} alt='music symbol'></img>
 
+            <img src={symbol} click={click} width={50} height={50} alt='music symbol'/>
             <audio src={music} ref={ref}  loop />
 
         </Box>

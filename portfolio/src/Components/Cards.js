@@ -8,7 +8,7 @@ export default function Cards() {
 
       return(
       <>
-      <div className='card card-front'>
+      <div className='card'>
         <Card style={{ width: "12rem", height: "12rem"  }} key={index} className="box">
         <Card.Img variant="top" src={card.image} />
         <Card.Body style={{ height: "2rem"  }} > 

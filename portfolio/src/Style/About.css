@@ -34,6 +34,38 @@
   text-align:center;
 }
  
-.card:nth-child(2){
+/* .card:{
+  border: 2px solid red;
+}  */
 
-} 
+.card:nth-child(2){
+  border: 2px solid blue;
+}
+
+.card:nth-child(3){
+  border: 2px solid green;
+}
+
+.card:nth-child(4){
+  border: 2px solid purple;
+}
+
+.card:nth-child(5){
+  border: 2px solid orange;
+}
+
+.card:nth-child(6){
+  border: 2px solid pink;
+}
+
+.card:nth-child(7){
+  border: 2px solid cyan;
+}
+
+.card:nth-child(8){
+  border: 2px solid slategray;
+}
+
+.card:nth-child(9){
+  border: 2px solid green;
+}

@@ -92,6 +92,7 @@ const MyVerticallyCenteredModal = (props) => {
           <span></span>
           <span></span>
           <span></span>
+          
             <div className='hero-box'>
             <h1>Hi, I'm Juliane, a UX/UI designer and front-end web developer!</h1>
             </div>
