@@ -9,25 +9,21 @@ export default function Cards() {
       return(
       <>
       <div className='card'>
-        <Card style={{ width: "12rem", height: "12rem"  }} key={index} className="box">
-        <Card.Img variant="top" src={card.image} />
-        <Card.Body style={{ height: "2rem"  }} > 
+        <Card style={{ width: '10rem', height: '10rem' }} key={index} className="box">
+        <Card.Img variant='top' src={card.image} />
+        <Card.Body style={{ height: '1rem' }} > 
         <Card.Title>{card.title}</Card.Title>
         </Card.Body>
         <Card.Footer>
-        <button>More Info</button>
+        <a>More Info</a>
         </Card.Footer>
         </Card>
       </div>
-
-      {/* <div className='card card-back'>
-        <Card.Text id='card-body'>{card.text}</Card.Text>
-      </div> */}
       </>
       );
     };  
 
-    return <div className='card-front'>{cardInfo.map(renderCard)}</div>
+    return cardInfo.map(renderCard)
 };
 
 
