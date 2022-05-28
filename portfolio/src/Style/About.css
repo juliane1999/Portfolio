@@ -19,7 +19,8 @@
 
 /* the cards in about page */
 .card{
-  height: 26%;
+  height: 0;
+  width: 0;
 }
 
 .card-img-top{
@@ -75,10 +76,10 @@
 
 .card:nth-child(8){
   grid-column: 4;
-  grid-row: 10;
+  grid-row: 5;
 }
 
 .card:nth-child(9){
   grid-column: 12;
-  grid-row: 10;
+  grid-row: 5;
 }

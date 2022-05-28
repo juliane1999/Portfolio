@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 import React, {useContext} from 'react'
-import tree from '../Assets/About@2x.png'
+import tree from '../Assets/About.png'
 import Cards from './Cards'
 import ThemeContext from '../Themes/ThemeContext'
 import '../Style/About.css'
