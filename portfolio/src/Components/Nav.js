@@ -19,13 +19,13 @@ export default function Nav() {
                  
                 <div className = 'links'>
                 <a>
-                <Link to = '/' style={{textDecoration: 'none'}}>Home</Link>
+                    <Link to = '/' style={{textDecoration: 'none'}}>Home</Link>
                 </a>
                 <a>
-                <Link to = '/projects' style={{textDecoration: 'none'}}>Projects</Link>
+                    <Link to = '/projects' style={{textDecoration: 'none'}}>Projects</Link>
                 </a>
                 <a>
-                <Link to = '/about'style={{textDecoration: 'none'}}>About</Link>
+                    <Link to = '/about'style={{textDecoration: 'none'}}>About</Link>
                 </a>
 
                 <Contact />

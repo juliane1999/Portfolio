@@ -30,7 +30,7 @@ const Pipe = () => {
 
   return (
     <Contain onClick={start}>
-        <img src={arrow} height={400} alt='arrow' />
+        <img src={arrow} height={400} id='arrow' alt='arrow' />
         <img src={pipe}  width={400} height={500} alt='blue pipe' />
     </Contain>
   )

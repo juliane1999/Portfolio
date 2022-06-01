@@ -38,7 +38,6 @@
 }
 
 .card:nth-child(1){
-  border: 3px solid darkcyan;
   grid-column: 1;
   grid-row: 4;
 }
