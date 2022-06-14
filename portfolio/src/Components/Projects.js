@@ -29,7 +29,7 @@ const Project = () => {
           <p style={theme} className='title'>Human Rights First</p>
             <img className='bg-images' src={HRF} alt='hrf'/>
               <div className='hashtags'>
-                <p style={theme}>#React #JavaScript #Redux</p>
+                <p style={theme}>#React #JavaScript #CSS #XML #AntDesign #DocSearchTool </p>
               </div>
         </a>
       </div>
@@ -39,24 +39,26 @@ const Project = () => {
           <p style={theme} className='title'>African Marketplace</p>
             <img className='bg-images' src={market} alt='market'/>
               <div className='hashtags'>
-                <p style={theme}>#React #JavaScript #Redux</p>
+                <p style={theme}>#React #JavaScript #Redux #CSS #XML #Node.js #Express #Vercel</p>
               </div>
         </a>
       </div>
 
       <div className='ecomm'>
-        <p className='title'>Ecomm</p>
-          <img className='bg-images' src={ecomm} alt='ecomm'/>
-            <div className='hashtags'>
-              <p style={theme}>#React #JavaScript #Redux</p>
-            </div>
+        <a target='_blank' href = 'https://github.com/c-and-j/front-end'>
+          <p style={theme} className='title'>Ecomm</p>
+            <img className='bg-images' src={ecomm} alt='ecomm'/>
+              <div className='hashtags'>
+                <p style={theme}>#React #JavaScript #Redux # XML #Tailwind #API #Heroku</p>
+              </div>
+        </a>
       </div>
 
       <div className='portfolio'>
         <p className='title'>Portfolio</p>
           <img className='bg-images' src={port} alt='portfolio'/>
             <div className='hashtags'>
-              <p style={theme}>#React #JavaScript #Redux</p>
+              <p style={theme}>#React #JavaScript #SCSS #ContextAPI #CreateGlobalStyle #PixelArt</p>
             </div>
       </div>
 
@@ -74,7 +76,7 @@ const Project = () => {
           <p style={theme} className='title'>Human Rights First</p>
             <img className='bg-images' src={HRF} alt='hrf'/>
               <div className='hashtags'>
-                <p style={theme}>#React #JavaScript #Redux</p>
+                <p id='fig-hash' style={theme}>#Figma #Whimsical #Mockup #Wireframes</p>
               </div>
         </a>
       </div>
@@ -82,10 +84,10 @@ const Project = () => {
       <div className='figma'>
         <a>
         <Link to = '/figma' style={{textDecoration: 'none'}}/>
-          <p style={theme} className='title'>African Marketplace</p>
+          <p style={theme} className='title'>Coming Soon</p>
             <img className='bg-images' src={market} alt='market'/>
               <div className='hashtags'>
-                <p style={theme}>#React #JavaScript #Redux</p>
+                <p style={theme}></p>
               </div>
         </a>
       </div>
@@ -96,7 +98,7 @@ const Project = () => {
           <p className='title'>Ecomm</p>
             <img className='bg-images' src={ecomm} alt='ecomm'/>
               <div className='hashtags'>
-                <p style={theme}>#React #JavaScript #Redux</p>
+              <p id='fig-hash' style={theme}>#Sketch #Invision #Mockup #Wireframes</p>
               </div>
         </a>
       </div>
@@ -107,7 +109,7 @@ const Project = () => {
           <p className='title'>Portfolio</p>
             <img className='bg-images' src={port} alt='portfolio'/>
               <div className='hashtags'>
-                <p style={theme}>#React #JavaScript #Redux</p>
+              <p id='fig-hash' style={theme}>#Figma #PhotoShop #Krita #ClipStudioPaint #Mockup #Wireframes</p>
               </div>
         </a>
       </div>

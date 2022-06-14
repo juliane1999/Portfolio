@@ -5,6 +5,10 @@
     padding: 0 5%;
 }
 
+.projects p, .figma p{
+    height: 60%;
+}
+
 .main-title{
     width: 100%;
     text-align: center;
@@ -19,13 +23,13 @@
     font-size: 500%;
 }
 
-.hrf{
+.hrf, .market, .ecomm, .portfolio{
     border: 3px solid darkcyan;
     border-radius: 10px;
     height: 55vh;
     width: 25%;
     margin: 2rem 5rem;
-    padding-top: .5%;
+    padding-top: 5%;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -33,48 +37,6 @@
     text-align: center;
     position: relative;
     z-index: 1;
-}
-
-.market{
-    border: 3px solid darkcyan;
-    border-radius: 10px;
-    height: 55vh;
-    width: 25%;
-    padding-top: 1%;
-    margin: 2rem 5rem;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-}
-
-.ecomm{
-    border: 3px solid darkcyan;
-    border-radius: 10px;
-    height: 50vh;
-    width: 25%;
-    margin: 2rem 5rem;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    
-}
-
-.portfolio{
-    border: 3px solid darkcyan;
-    border-radius: 10px;
-    height: 50vh;
-    width: 25%;
-    margin: 2rem 5rem;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 }
 
 .title{
@@ -144,7 +106,6 @@ p{
     height: 55vh;
     width: 25%;
     margin: 2rem 5rem;
-    padding-top: .5%;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -152,6 +113,11 @@ p{
     text-align: center;
     position: relative;
     z-index: 1;
+}
+
+.hashtags{
+    display: flex;
+    justify-content: space-between;
 }
 
 #empty{
