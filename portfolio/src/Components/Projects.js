@@ -1,14 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-no-target-blank */
 import React,{ useState,useContext } from 'react'
-import { Modal, Button, Image } from 'antd';
+import { Modal, Button } from 'antd';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "antd/dist/antd.css";
 import ThemeContext from '../Themes/ThemeContext'
-import HRF from '../Assets/Search.png'
-import ecomm from '../Assets/Ecomm.png'
-import market from '../Assets/Market.png'
-import port from '../Assets/Port.png'
+// import HRF from '../Assets/Search.png'
+// import ecomm from '../Assets/Ecomm.png'
+// import market from '../Assets/Market.png'
+// import port from '../Assets/Port.png'
 import Pipe from '../Components/Pipe'
 import { ProjectsData } from '../Data/Frontend'
 import { DesignData } from '../Data/Design';
@@ -71,9 +71,9 @@ return (
           ))}
       </div>
   
-    <Pipe />
-
-    <span id='empty'></span>
+  <div className='pipe'>
+    <Pipe/>
+  </div>
 
   <h1 id='design' style={theme}>UX/UI</h1>
 

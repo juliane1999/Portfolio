@@ -10,7 +10,7 @@ flex-flow: column wrap;
 width:100%;
 align-content: center;
 cursor:pointer;
-z-index:10;
+z-index:1;
 `
 const Pipe = () => {
 
