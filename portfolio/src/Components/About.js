@@ -2,6 +2,7 @@
 import React, {useContext} from 'react'
 import tree from '../Assets/About.png'
 import Cards from './Cards'
+import portrait from '../Assets/Me.png'
 import ThemeContext from '../Themes/ThemeContext'
 import '../Style/About.css'
 
@@ -13,13 +14,14 @@ export default function About() {
     <>
     <img src={tree} id = 'about' alt='tree' style={theme}></img>
 
+    <div className='portrait'>
+      <img src={portrait} width={165} height={225} alt='portrait'></img>
+    </div>
+
     <div className='wrap'>
       <Cards/>
     </div>
 
-    {/* <div style={theme}>
-      <h1 style={theme}>Mobile App Coming Soon</h1>
-    </div> */}
     </>
   ) 
 };
