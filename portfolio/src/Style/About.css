@@ -84,9 +84,14 @@
 }
 
 .portrait{
-  z-index: 99;
   position: relative;
   width: fit-content;
   top: 70px;
   left: 645px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.portrait:hover{
+  opacity: 1;
 }

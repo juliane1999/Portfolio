@@ -15,7 +15,7 @@ export default function About() {
     <img src={tree} id = 'about' alt='tree' style={theme}></img>
 
     <div className='portrait'>
-      <img src={portrait} width={165} height={225} alt='portrait'></img>
+      <img className='pic' src={portrait} width={165} height={225} alt='portrait'></img>
     </div>
 
     <div className='wrap'>
